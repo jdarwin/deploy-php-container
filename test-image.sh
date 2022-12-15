@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 # set username and password
-UNAME="myjddocker"
-UPASS="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"
+UNAME=""
+UPASS=""
 
 function docker_tag_exists() {
     TOKEN=$(curl -s -H "Content-Type: application/json" -X POST -d '{"username": "'${UNAME}'", "password": "'${UPASS}'"}' https://hub.docker.com/v2/users/login/ | jq -r .token)
