@@ -14,7 +14,7 @@ spec:
         app: sample-php
     spec:
       containers:
-        - image: myjddocker/sample-php:latest
+        - image: myjddocker/phpfpm-app:latest
           name: php-sample
           imagePullPolicy: Always
           ports:
